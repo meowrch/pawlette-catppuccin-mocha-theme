@@ -12,6 +12,9 @@ bspc config window_gap 10
 # Set color scheme
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
+# Set gtk theme
+gsettings set org.gnome.desktop.interface gtk-theme 'pawlette-catppuccin-mocha'
+
 # Set icon theme
 gsettings set org.gnome.desktop.interface icon-theme 'pawlette-catppuccin-mocha'
 
