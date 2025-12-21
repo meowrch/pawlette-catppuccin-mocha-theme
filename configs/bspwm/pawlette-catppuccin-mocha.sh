@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Using .Xresources for X11 applications
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
+
 # Set the border colors for focused and normal windows
 bspc config focused_border_color "#b4befe"
 bspc config border_width 3
@@ -21,3 +24,6 @@ gsettings set org.gnome.desktop.interface icon-theme 'pawlette-catppuccin-mocha'
 # Set cursor theme
 gsettings set org.gnome.desktop.interface cursor-theme 'pawlette-catppuccin-mocha'
 gsettings set org.gnome.desktop.interface cursor-size 20
+
+# Use the cursor for X11 (if necessary)
+xsetroot -cursor_name left_ptr
